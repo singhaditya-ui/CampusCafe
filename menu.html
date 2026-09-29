@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Campus Cafe - Menu and Order</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Header -->
+  <header>
+    <h1>Campus Cafe</h1>
+    <p>Order your food before you reach the counter</p>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="menu.html">Menu &amp; Order</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+  </header>
+
+  <main>
+
+    <!-- Menu -->
+    <h2>Menu</h2>
+    <table>
+      <tr>
+        <th>Item</th>
+        <th>Type</th>
+        <th>Price</th>
+        <th>Order</th>
+      </tr>
+      <tr>
+        <td>Masala Chai</td>
+        <td>Drink</td>
+        <td>Rs. 15</td>
+        <td><button onclick="addItem('Masala Chai', 15)">Add</button></td>
+      </tr>
+      <tr>
+        <td>Cold Coffee</td>
+        <td>Drink</td>
+        <td>Rs. 50</td>
+        <td><button onclick="addItem('Cold Coffee', 50)">Add</button></td>
+      </tr>
+      <tr>
+        <td>Vada Pav</td>
+        <td>Snack</td>
+        <td>Rs. 20</td>
+        <td><button onclick="addItem('Vada Pav', 20)">Add</button></td>
+      </tr>
+      <tr>
+        <td>Veg Sandwich</td>
+        <td>Snack</td>
+        <td>Rs. 40</td>
+        <td><button onclick="addItem('Veg Sandwich', 40)">Add</button></td>
+      </tr>
+      <tr>
+        <td>Samosa</td>
+        <td>Snack</td>
+        <td>Rs. 15</td>
+        <td><button onclick="addItem('Samosa', 15)">Add</button></td>
+      </tr>
+      <tr>
+        <td>Veg Fried Rice</td>
+        <td>Meal</td>
+        <td>Rs. 80</td>
+        <td><button onclick="addItem('Veg Fried Rice', 80)">Add</button></td>
+      </tr>
+    </table>
+    <p id="menuMsg"></p>
+
+    <!-- My Order -->
+    <h2>My Order</h2>
+    <ul id="cartList"></ul>
+    <p><b>Total: Rs. <span id="total">0</span></b></p>
+    <button onclick="clearCart()">Clear Order</button>
+
+    <!-- Pickup details -->
+    <h2>Pickup Details</h2>
+
+    <label for="name">Your name</label>
+    <input type="text" id="name" placeholder="Enter your name">
+
+    <label for="time">Pickup time</label>
+    <select id="time">
+      <option>Short break (11:00 AM)</option>
+      <option>Lunch break (1:00 PM)</option>
+      <option>Evening (4:00 PM)</option>
+    </select>
+
+    <br><br>
+    <button onclick="placeOrder()">Place Order</button>
+    <p id="msg" class="hidden"></p>
+
+  </main>
+
+  <!-- Footer -->
+  <footer>
+    <p>Campus Cafe - Web Designing Project, Semester 1</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

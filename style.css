@@ -1,0 +1,175 @@
+/* General */
+body {
+  margin: 0;
+  background-color: #FAF7F2;
+  color: #2B2B2B;
+  font-family: Arial, sans-serif;
+  line-height: 1.5;
+}
+
+main {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 15px;
+}
+
+h2 {
+  color: #2F4A3E;
+  border-bottom: 2px solid #C8A45C;
+  padding-bottom: 4px;
+}
+
+/* Header */
+header {
+  background-color: #2F4A3E;
+  color: #FFFFFF;
+  padding: 15px;
+  text-align: center;
+  border-bottom: 4px solid #C8A45C;
+}
+
+header h1 {
+  margin: 0;
+  font-size: 28px;
+}
+
+header p {
+  margin: 4px 0 10px 0;
+}
+
+nav a {
+  display: inline-block;
+  color: #FFFFFF;
+  text-decoration: none;
+  padding: 6px 14px;
+  margin: 0 4px 4px 4px;
+  border: 1px solid #C8A45C;
+}
+
+nav a:hover {
+  background-color: #C8A45C;
+  color: #1f3329;
+}
+
+/* Buttons */
+button,
+.button {
+  display: inline-block;
+  background-color: #2F4A3E;
+  color: #FFFFFF;
+  border: none;
+  border-radius: 4px;
+  padding: 8px 14px;
+  font-size: 15px;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+button:hover,
+.button:hover {
+  background-color: #1f3329;
+}
+
+/* Home */
+.banner {
+  background-color: #EFE6D2;
+  border: 2px solid #C8A45C;
+  padding: 20px;
+  text-align: center;
+  margin-bottom: 15px;
+}
+
+.banner h2 {
+  border: none;
+  font-size: 26px;
+  margin-top: 0;
+}
+
+.special {
+  background-color: #FFFFFF;
+  border: 2px dashed #C8A45C;
+  padding: 12px;
+  margin: 15px 0;
+}
+
+.special h3 {
+  margin: 0 0 5px 0;
+  color: #2F4A3E;
+}
+
+/* Menu and Order */
+table {
+  border-collapse: collapse;
+  width: 100%;
+  background-color: #FFFFFF;
+}
+
+th,
+td {
+  border: 1px solid #C8A45C;
+  padding: 8px;
+  text-align: left;
+}
+
+th {
+  background-color: #EFE6D2;
+}
+
+tr:nth-child(even) td {
+  background-color: #F6F0E4;
+}
+
+#cartList li {
+  margin-bottom: 4px;
+}
+
+label {
+  display: block;
+  margin-top: 10px;
+}
+
+input,
+select {
+  width: 100%;
+  max-width: 300px;
+  padding: 6px;
+  font-size: 15px;
+  box-sizing: border-box;
+}
+
+#msg {
+  background-color: #EFE6D2;
+  padding: 10px;
+  margin-top: 10px;
+}
+
+.hidden {
+  display: none;
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  padding: 12px;
+  margin-top: 25px;
+  border-top: 2px solid #C8A45C;
+  font-size: 14px;
+}
+
+/* Responsive */
+@media (max-width: 500px) {
+  header h1 {
+    font-size: 24px;
+  }
+
+  th,
+  td {
+    padding: 5px;
+    font-size: 14px;
+  }
+
+  button,
+  .button {
+    padding: 10px 14px;
+  }
+}
